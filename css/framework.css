@@ -1,0 +1,53 @@
+/*
+	Starter styles (do not edit)
+*/
+
+body {
+	margin: 0;
+	padding: 40px;
+	background-color: #EFEFEF;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 12px;
+}
+
+h2 {
+	margin-top: 0px;
+}
+
+.portfolio-item {
+	float: left;
+	margin: 10px;
+}
+
+.portfolio-item:hover .front {
+	transform: rotateY(180deg);
+}
+
+.portfolio-item:hover .back {
+	transform: rotateY(0deg);
+}
+
+.front, .back {
+	background: #CCC;
+	border-radius: 10px;
+}
+
+.front {
+	overflow: hidden;
+	width: 200px;
+	height: 200px;
+	position: absolute;
+	transition: transform 1s;
+	-webkit-backface-visibility: hidden;
+}
+
+.back {
+	padding: 20px;
+	width: 160px;
+	height: 160px;
+	transition: transform 1s;
+	transform: rotateY(-180deg);
+	-webkit-backface-visibility: hidden;
+}
+
+
